@@ -1,0 +1,179 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Optional background color for the page */
+}
+
+header {
+   
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    background-color: black;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+
+.card {
+    width: 210px;
+    height: 280px;
+    background: rgb(39, 39, 39);
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition-duration: .5s;
+    margin: 20px 0;
+    /* Optional margin for spacing */
+}
+
+
+
+
+
+
+.profileImage {
+    background: linear-gradient(to right, rgb(54, 54, 54), rgb(32, 32, 32));
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+.textContainer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.name {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.profile {
+    font-size: 0.84em;
+    color: rgb(194, 194, 194);
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding-top: 2px;
+}
+
+.card:hover {
+    background-color: rgb(43, 43, 43);
+    transition-duration: .5s;
+}
+
+#about {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+#about h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.button1 {
+    font-size: 1.4em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+}
+
+.container1 {
+    position: relative;
+    padding: 3px;
+    background: linear-gradient(90deg, #d2fbf6, #6c6a6a68);
+    border-radius: 0.9em;
+    transition: all 0.4s ease;
+    display: flex; /* Added to align items inside the container */
+    flex-direction: column; /* Added to align items vertically */
+    align-items: center; /* Added to center align items */
+    gap: 10px; /* Added for spacing between button and paragraph */
+}
+
+.container1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0.9em;
+    z-index: -10;
+    filter: blur(0);
+    transition: filter 0.4s ease;
+}
+
+
+.container1:active::before {
+    filter: blur(0.2em);
+}
+
+
+
+footer {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
